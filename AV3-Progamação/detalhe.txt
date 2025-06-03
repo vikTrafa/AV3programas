@@ -1,0 +1,2 @@
+é necessário criar o banco de dados em si antes:
+Create database biblioteca;

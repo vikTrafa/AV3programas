@@ -1,0 +1,47 @@
+#CREATE DATABASE biblioteca;
+
+#use biblioteca;
+
+/*CREATE TABLE Livros (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	titulo VARCHAR(80) NOT NULL,
+	autor VARCHAR(100) NOT NULL,
+	categoria VARCHAR(50) NOT NULL,
+	disponibilidade BOOLEAN NOT NULL
+);
+
+CREATE TABLE Membros(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(100) NOT NULL,
+	cpf VARCHAR(14) NOT NULL,
+	telefone VARCHAR(20),
+	email VARCHAR(150)
+);
+
+CREATE TABLE emprestimos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_livro INT NOT NULL,
+    id_membro INT NOT NULL,
+    data_emprestimo DATE NOT NULL,
+    data_devolucao DATE NOT NULL, 
+    status_livro ENUM('disponivel', 'emprestado', 'reservado') NOT NULL,
+    FOREIGN KEY (id_livro) REFERENCES livros(id),
+    FOREIGN KEY (id_membro) REFERENCES membros(id)
+);
+
+CREATE TABLE Funcionarios(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(150) NOT NULL,
+	cargo VARCHAR(100) NOT NULL,
+	login VARCHAR(250) NOT NULL,
+	senha VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE Historico_de_emprestimos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_membro INT NOT NULL,
+    id_livro INT NOT NULL,
+    data_acao DATE NOT NULL,
+    FOREIGN KEY (id_membro) REFERENCES membros(id),
+    FOREIGN KEY (id_livro) REFERENCES livros(id)
+);*/

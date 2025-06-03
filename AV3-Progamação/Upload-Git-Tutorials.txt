@@ -1,0 +1,69 @@
+Apesar de ser mais versatil usar o desktop, ainda
+irei deixar isso aqui.
+
+
+
+CONFIGURAÇÃO E USO GERAL:
+
+Para iniciar o Git:
+git init
+
+Apresentando a listagem de arquivos que foram ou não upados usa-se:
+git status
+(Não é possível visualizar pastas vazias, compacte os arquivos de preferência)
+
+pra upar os arquivos individualmente use:
+git add "nome_do_arquivo.txt"
+
+para adicionar todos de uma vez:
+git add .
+
+para deixar escrito qual modificação foi feita nos documentos ou código:
+git commit -m "comentário_sobre_a_alteração"
+(No caso, não vai ir de primiera, se você ainda não está logado na sua conta com o git)
+
+Para logar com a conta do git use:
+git config --global user.email "seuEmaildoGitHub@gmail.com"
+git config --global user.name "Seu_Nome_Principal_da_conta"
+
+Para definir para qual repositório será enviado os arquivos:
+git remote add origin "link_do_repositório"
+(Só irá funcionar se você for um criador ou colaborador de um repositório dentro do Github)
+
+Para upar os arquivos para o github use:
+git push --set
+(Não irá funcionar se você ainda não tive vinculado sua conta do Git ao do GitHub)
+
+Para fazer o vínculo do Git e do Github use:
+git push --set-upstream origin master
+(Ele vai pedir pra você logar com a sua conta Git)
+(o nome "master" certamente é alteravél para o nome que você quiser, sendo 
+uma bipartição da aba "Main" que ele irá criar.)
+
+depois de feito uma vez, basta usar o código "git push --set" pois já vai estár configurado.
+
+Para clonar um repositório para sua máquina:
+git clone
+
+
+EM CASO DE ERROS:
+
+Caso você erre o link do repositório use:
+git remote remove origin
+(e depois você pode usar novamente "git remote add origin [<URL_CORRETA>]")
+(É entres aspas apenas a URL.)
+
+Caso precise apagar, ou trocar as configurações globais:
+git config --global --unset user.name
+git config --global --unset user.email
+
+Para apagar as credências salvas em cache do git:
+git credential reject https://github.com
+
+IMPORTÂNTE:
+da pra enviar pra o main também:
+git push origin main
+E lembre de usar o commit antes de upar o arquivo.
+git add .
+git commit -m "Adicionando novos arquivos"
+git push origin main
