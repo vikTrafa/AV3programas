@@ -45,3 +45,20 @@ CREATE TABLE Historico_de_emprestimos (
     FOREIGN KEY (id_membro) REFERENCES membros(id),
     FOREIGN KEY (id_livro) REFERENCES livros(id)
 );*/
+
+/*CREATE TABLE membros_excluidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(20) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    data_exclusao TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE livros_excluidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    data_exclusao DATETIME NOT NULL
+);*/
